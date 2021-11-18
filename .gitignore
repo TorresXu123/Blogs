@@ -8,7 +8,7 @@
 /package-lock.json
 
 # production
-/dist
+# /dist github的CI功能是直接拉的Blogs项目下的dist文件
 
 # misc
 .DS_Store
