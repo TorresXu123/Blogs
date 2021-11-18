@@ -3,8 +3,8 @@ hero:
   title: TorressXu's Blogs
   desc: Talk is cheap，show me the code.
   actions:
-    - text: 快速开始
-      link: /getting-started
+    - text: 随便看看
+      link: /guide
 features:
   - icon: https://cn.vuejs.org/images/logo.svg
     title: Vue
