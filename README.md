@@ -1,2 +1,21 @@
-# Blogs
-开源的博客学习文档库(修改2)
+# dumi app
+
+## Getting Started
+
+Install dependencies,
+
+```bash
+$ npm i
+```
+
+Start the dev server,
+
+```bash
+$ npm start
+```
+
+Build site app,
+
+```bash
+$ npm run build
+```
