@@ -7,7 +7,7 @@ nav:
   order: 3
 ---
 
-## 数组专题
+## 一、数组专题
 
 ### 1、forEach 循环调用异步方法，如何实现同步
 
@@ -85,3 +85,31 @@ arr.forEach(async (item, index) => {
 ```
 
 ### 2、第二题
+
+## 二、经典面试题
+
+### 1、大数相加
+
+```js
+function largeNumberAdd(a: string, b: string): string {
+  // 如 a = "9007199254740991"; b = "1234567899999999999";
+  // 1、取两个数字的最大长度，用0去补齐长度
+  let maxLength = Math.max(a.length, b.length);
+  a = a.padStart(maxLength, '0');
+  b = b.padStart(maxLength, '0');
+  let t = 0;
+  let f = 0;
+  let sum = '';
+  for (let i = maxLength - 1; i >= 0; i--) {
+    // 2、从低位开始计算，t一定不会超过20，f只会是0或1
+    t = parseInt(a[i]) + parseInt(b[i]) + f;
+    f = Math.floor(t / 10);
+    sum = (t % 10) + sum;
+  }
+  if (f == 1) {
+    // 3、最大一位有值就进一位
+    sum = '1' + sum;
+  }
+  return sum;
+}
+```
