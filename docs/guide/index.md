@@ -138,3 +138,4 @@ yarn docs:deploy # 会对打包好的dist目录执行推送，自动发布到远
 ```
 
 测试修改...
+执行 build 命令

@@ -2905,7 +2905,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/guide/index.md',
-                updatedTime: 1639487004e3,
+                updatedTime: 1644309462e3,
                 title:
                   'CI/CD\u5b9e\u73b0\u6587\u6863\u81ea\u52a8\u5316\u90e8\u7f72',
                 order: 1,
@@ -3923,6 +3923,11 @@
             code: 'yarn build # \u6784\u5efa\u9759\u6001\u8d44\u6e90\nyarn docs:deploy # \u4f1a\u5bf9\u6253\u5305\u597d\u7684dist\u76ee\u5f55\u6267\u884c\u63a8\u9001\uff0c\u81ea\u52a8\u53d1\u5e03\u5230\u8fdc\u7a0b\u4ed3\u5e93\u5e76\u751f\u6210gh-pages branch\u5206\u652f',
             lang: 'bash',
           }),
+          o.a.createElement(
+            'p',
+            null,
+            '\u6d4b\u8bd5\u4fee\u6539... \u6267\u884cbuild\u547d\u4ee4',
+          ),
         ),
       )
     );
