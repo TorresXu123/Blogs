@@ -2905,7 +2905,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/guide/index.md',
-                updatedTime: 1644309462e3,
+                updatedTime: 1644309714e3,
                 title:
                   'CI/CD\u5b9e\u73b0\u6587\u6863\u81ea\u52a8\u5316\u90e8\u7f72',
                 order: 1,
@@ -3894,6 +3894,11 @@
             '\u540e\u7eed\u53ea\u8981 push \u6216\u8005 pull request \u4ee3\u7801\u5230 main\uff0c\u90fd\u4f1a\u89e6\u53d1 CI \u63a8\u9001\u4ee3\u7801\u5230 [username].github.io \u4ed3\u5e93',
           ),
           o.a.createElement(
+            'p',
+            null,
+            '**\u5b8c\u6574\u52a8\u4f5c\u4e3a\uff1a**\u5199 markdown \u6587\u6863->yarn build->git add/cm->git push\uff08\u68c0\u6d4b\u5230 dist \u6709\u53d8\u5316\u624d\u4f1a\u66f4\u65b0\u5230 github.io \u4ed3\u5e93\u5e76\u91cd\u65b0\u90e8\u7f72\u7ad9\u70b9\uff09',
+          ),
+          o.a.createElement(
             'h2',
             {
               id: '\u5229\u7528-gh-pages-\u5b9e\u73b0\u624b\u52a8\u90e8\u7f72\u63a8\u9001',
@@ -3923,11 +3928,6 @@
             code: 'yarn build # \u6784\u5efa\u9759\u6001\u8d44\u6e90\nyarn docs:deploy # \u4f1a\u5bf9\u6253\u5305\u597d\u7684dist\u76ee\u5f55\u6267\u884c\u63a8\u9001\uff0c\u81ea\u52a8\u53d1\u5e03\u5230\u8fdc\u7a0b\u4ed3\u5e93\u5e76\u751f\u6210gh-pages branch\u5206\u652f',
             lang: 'bash',
           }),
-          o.a.createElement(
-            'p',
-            null,
-            '\u6d4b\u8bd5\u4fee\u6539... \u6267\u884cbuild\u547d\u4ee4',
-          ),
         ),
       )
     );

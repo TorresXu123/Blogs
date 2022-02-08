@@ -116,6 +116,8 @@ jobs: # 工作流执行的一个或多个任务
 
 后续只要 push 或者 pull request 代码到 main，都会触发 CI 推送代码到 [username].github.io 仓库
 
+**完整动作为：**写 markdown 文档->yarn build->git add/cm->git push（检测到 dist 有变化才会更新到 github.io 仓库并重新部署站点）
+
 ## 利用 gh-pages 实现手动部署推送
 
 在文档项目中引入 gh-pages 包，并写好推送脚本
@@ -136,6 +138,3 @@ yarn add gh-pages -D #安装gh-pages
 yarn build # 构建静态资源
 yarn docs:deploy # 会对打包好的dist目录执行推送，自动发布到远程仓库并生成gh-pages branch分支
 ```
-
-测试修改...
-执行 build 命令
