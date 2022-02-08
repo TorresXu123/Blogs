@@ -34,8 +34,8 @@ yarn start #启动文档
 //本项目.umirc.ts配置
 {
   title: 'Blogs', // 站点标题
-  base: '/Blogs/',//文档起始路由
-  publicPath: '/Blogs/',//静态资源起始路径
+  base: '/',//文档起始路由
+  publicPath: '/',//静态资源起始路径
   exportStatic: {}, // 将所有路由输出为 HTML 目录结构，以免刷新页面时 404
   mode: 'site',
   locales: [['zh-CN', '中文']],//去除国际化,该配置为二维数组，第一项配置会作为站点默认的 locale
@@ -108,7 +108,7 @@ jobs: # 工作流执行的一个或多个任务
           BRANCH: master # 指定部署的分支，默认是 gh-pages 分支
           FOLDER: dist # 默认源码在 dist 目录
           REPOSITORY_NAME: TorresXu123/TorresXu123.github.io # 远程仓库所在地址
-          TARGET_FOLDER: Blogs # 静态资源需要部署到的目录（目的地）
+          # TARGET_FOLDER: Blogs 静态资源需要部署到的目录（目的地）不写默认放到TorresXu123.github.io仓库根目录
 
         env:
           CI: true
@@ -124,7 +124,7 @@ jobs: # 工作流执行的一个或多个任务
 yarn add gh-pages -D #安装gh-pages
 
 # 项目package.json配置新增
-+"homepage": "https://torresxu123.github.io/Blogs",
++"homepage": "https://torresxu123.github.io",# 访问站点的URL
 "scripts": {
 +   "docs:deploy": "gh-pages -d dist"  # dist是打包生成的目录
 }
