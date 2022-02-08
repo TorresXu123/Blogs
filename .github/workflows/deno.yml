@@ -41,7 +41,7 @@ jobs:
         BRANCH: master
         FOLDER: dist
         REPOSITORY_NAME: TorresXu123/TorresXu123.github.io
-        TARGET_FOLDER: Blogs
+        # TARGET_FOLDER: Blogs
 
       env:
         CI: true
