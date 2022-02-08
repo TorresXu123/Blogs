@@ -2905,7 +2905,7 @@
               exact: !0,
               meta: {
                 filePath: 'docs/guide/index.md',
-                updatedTime: 1644309714e3,
+                updatedTime: 1644310175e3,
                 title:
                   'CI/CD\u5b9e\u73b0\u6587\u6863\u81ea\u52a8\u5316\u90e8\u7f72',
                 order: 1,
