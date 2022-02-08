@@ -49,7 +49,7 @@
     (n.o = function (e, t) {
       return Object.prototype.hasOwnProperty.call(e, t);
     }),
-    (n.p = '/Blogs/'),
+    (n.p = '/'),
     n((n.s = 0));
 })({
   '++zV': function (e, t, n) {
@@ -27804,7 +27804,7 @@
         return i;
       });
     var r = n('YS25'),
-      o = { basename: '/Blogs/' };
+      o = { basename: '/' };
     window.routerBase && (o.basename = window.routerBase);
     var i = Object({ NODE_ENV: 'production' }).__IS_SERVER
         ? null
