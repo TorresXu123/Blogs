@@ -1,6 +1,6 @@
 ---
 title: 如何搭建前端组件库
-order: 2
+order: 3
 toc: menu
 ---
 

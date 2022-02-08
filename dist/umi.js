@@ -2889,7 +2889,7 @@
                 filePath: 'docs/guide/components.md',
                 updatedTime: 1639487004e3,
                 title: '\u5982\u4f55\u642d\u5efa\u524d\u7aef\u7ec4\u4ef6\u5e93',
-                order: 2,
+                order: 3,
                 toc: 'menu',
                 slugs: [
                   { depth: 2, value: '\u524d\u8a00', heading: '\u524d\u8a00' },
@@ -2940,6 +2940,37 @@
               },
               title:
                 'CI/CD\u5b9e\u73b0\u6587\u6863\u81ea\u52a8\u5316\u90e8\u7f72 - Blogs',
+            },
+            {
+              path: '/guide/picgo',
+              component: n('7UUn').default,
+              exact: !0,
+              meta: {
+                filePath: 'docs/guide/picgo.md',
+                updatedTime: 1644319692803,
+                title:
+                  '\u6253\u9020\u514d\u8d39\u5feb\u901f\u7a33\u5b9a\u7684\u79c1\u4eba\u56fe\u5e8a',
+                order: 2,
+                toc: 'menu',
+                slugs: [
+                  { depth: 2, value: '\u524d\u8a00', heading: '\u524d\u8a00' },
+                  {
+                    depth: 2,
+                    value: '\u6574\u4f53\u601d\u8def\u5982\u4e0b',
+                    heading: '\u6574\u4f53\u601d\u8def\u5982\u4e0b',
+                  },
+                  {
+                    depth: 2,
+                    value:
+                      '\u4e0d\u7528\u547d\u4ee4\u884c\uff0c\u5220\u9664 GitHub \u4e0a\u56fe\u7247\u6216\u6587\u4ef6',
+                    heading:
+                      '\u4e0d\u7528\u547d\u4ee4\u884c\u5220\u9664-github-\u4e0a\u56fe\u7247\u6216\u6587\u4ef6',
+                  },
+                ],
+                nav: { path: '/guide', title: '\u6280\u672f\u6742\u9879' },
+              },
+              title:
+                '\u6253\u9020\u514d\u8d39\u5feb\u901f\u7a33\u5b9a\u7684\u79c1\u4eba\u56fe\u5e8a - Blogs',
             },
             {
               path: '/interview',
@@ -5698,6 +5729,223 @@
         return n;
       },
       o,
+    );
+  },
+  '7UUn': function (e, t, n) {
+    'use strict';
+    n.r(t);
+    var r = n('q1tI'),
+      o = n.n(r),
+      i = n('dEAq'),
+      a = n('H1Ra');
+    n('JjdP');
+    t['default'] = (e) => (
+      o.a.useEffect(() => {
+        var t;
+        null !== e &&
+          void 0 !== e &&
+          null !== (t = e.location) &&
+          void 0 !== t &&
+          t.hash &&
+          i['AnchorLink'].scrollToAnchor(
+            decodeURIComponent(e.location.hash.slice(1)),
+          );
+      }, []),
+      o.a.createElement(
+        o.a.Fragment,
+        null,
+        o.a.createElement(
+          'div',
+          { className: 'markdown' },
+          o.a.createElement(
+            'h2',
+            { id: '\u524d\u8a00' },
+            o.a.createElement(
+              i['AnchorLink'],
+              { to: '#\u524d\u8a00', 'aria-hidden': 'true', tabIndex: -1 },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '\u524d\u8a00',
+          ),
+          o.a.createElement(
+            'blockquote',
+            null,
+            o.a.createElement(
+              'p',
+              null,
+              '\u6211\u4eec\u5728\u5199 markdown \u6587\u6863\u65f6\uff0c\u65f6\u5e38\u4f1a\u9700\u8981\u901a\u8fc7\u56fe\u7247\u8d44\u6e90\u53bb\u8f85\u4ee5\u8bf4\u660e\u3002\u8fd9\u65f6\u5019\u6211\u4eec\u5c31\u9700\u8981\u4e00\u4e2a\u56fe\u5e8a\u6765\u6ee1\u8db3\u6211\u4eec\u7684\u9700\u6c42\uff0c\u800c\u56fe\u5e8a\u5b58\u5728\u7684\u610f\u4e49\uff0c\u5c31\u662f\u4e13\u95e8\u7528\u6765\u5b58\u653e\u56fe\u7247\uff0c\u540c\u65f6\u5141\u8bb8\u4f60\u628a\u56fe\u7247\u5bf9\u5916\u8fde\u63a5\u7684\u7f51\u4e0a\u7a7a\u95f4\u3002\u7f51\u4e0a\u642d\u5efa\u514d\u8d39\u56fe\u5e8a\u7684\u65b9\u6848\u6709\u5f88\u591a\uff0c\u6211\u4eec\u4eca\u5929\u9009\u62e9\u901a\u8fc7 Vscode \u63d2\u4ef6 vs-picgo+Github \u7684\u65b9\u5f0f\u6765\u642d\u5efa Markdown \u56fe\u5e8a\uff0c\u4f18\u70b9\u5728\u4e8e\u5feb\u6377\u8f7b\u4fbf\uff0c\u501f\u52a9 github \u5e73\u53f0\u5b89\u5168\u53ef\u9760\uff0c\u7f3a\u70b9\u5728\u4e8e\u6211\u4eec\u5fc5\u987b\u8981\u501f\u52a9 vscode \u7684\u5feb\u6377\u952e\u6765\u4e0a\u4f20\u56fe\u7247\u3002',
+            ),
+          ),
+          o.a.createElement(
+            'h2',
+            { id: '\u6574\u4f53\u601d\u8def\u5982\u4e0b' },
+            o.a.createElement(
+              i['AnchorLink'],
+              {
+                to: '#\u6574\u4f53\u601d\u8def\u5982\u4e0b',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '\u6574\u4f53\u601d\u8def\u5982\u4e0b',
+          ),
+          o.a.createElement(
+            'ol',
+            null,
+            o.a.createElement(
+              'li',
+              null,
+              o.a.createElement(
+                'p',
+                null,
+                '\u5728 vscode \u4e2d\u4e0b\u8f7d\u5b89\u88c5 vs-picgo \u63d2\u4ef6\uff0c\u5173\u952e setting.json \u914d\u7f6e\u5982\u4e0b',
+              ),
+              o.a.createElement(
+                'ol',
+                null,
+                o.a.createElement(
+                  'li',
+                  null,
+                  o.a.createElement('code', null, 'current'),
+                  ' \u8bbe\u7f6e\u4e3a GitHub',
+                ),
+                o.a.createElement(
+                  'li',
+                  null,
+                  o.a.createElement('code', null, 'Branch'),
+                  ' \u662f\u6211\u4eec\u4ed3\u5e93\u7684\u5206\u652f\uff0c\u9ed8\u8ba4\u4e3a main',
+                ),
+                o.a.createElement(
+                  'li',
+                  null,
+                  o.a.createElement('code', null, 'custom url'),
+                  ' \u662f\u6211\u4eec\u56fe\u7247\u4e0a\u4f20\u7684\u8fde\u63a5\uff0c\u6709\u4e24\u79cd\u65b9\u5f0f\u53ef\u4ee5\u4f7f\u7528',
+                  o.a.createElement(a['a'], {
+                    code: '\u539f\u751f\u65b9\u5f0f\uff1a\u4f7f\u7528GitHub\u539f\u751f\u8fde\u63a5\uff0c\u683c\u5f0f\u4e3a\n    https://raw.githubusercontent.com/[\u7528\u6237\u540d]/[\u4ed3\u5e93\u540d]/[\u5206\u652f\u540d]\n    \u5982https://raw.githubusercontent.com/TorresXu123/PicGo/main\n    \u539f\u751f\u65b9\u5f0f\u6709\u4e00\u4e2a\u5f0a\u7aef\u5c31\u662f\uff0c\u56fd\u5185\u901f\u5ea6\u6bd4\u8f83\u6162\n cdn\u52a0\u901f\u65b9\u5f0f\uff1a\u683c\u5f0f\u4e3a\n    https://cdn.jsdelivr.net/gh/[\u7528\u6237\u540d]/[\u4ed3\u5e93\u540d]@[\u5206\u652f\u540d]\n    \u5982https://cdn.jsdelivr.net/gh/TorresXu123/PicGo@main\n    cdn\u52a0\u901f\u7684\u4f18\u70b9\u662f\u56fd\u5185\u8bbf\u95ee\u901f\u5ea6\u6bd4\u8f83\u5feb',
+                    lang: 'txt',
+                  }),
+                ),
+                o.a.createElement(
+                  'li',
+                  null,
+                  o.a.createElement('code', null, 'path'),
+                  '\u662f\u6211\u4eec\u7684\u56fe\u7247\u5b58\u50a8\u5728\u4ed3\u5e93\u4e2d\u7684\u8def\u5f84\uff0c\u6bd4\u5982\u6211\u7684\u662f blogs/imgs/',
+                ),
+                o.a.createElement(
+                  'li',
+                  null,
+                  o.a.createElement('code', null, 'Repo'),
+                  '\u662f\u6211\u4eec\u7684\u4ed3\u5e93\uff0c\u6bd4\u5982\u6211\u7684\u662f TorresXu123/PicGo/',
+                ),
+              ),
+            ),
+            o.a.createElement(
+              'li',
+              null,
+              o.a.createElement(
+                'p',
+                null,
+                '\u5728 github \u4e2a\u4eba\u8d26\u53f7\u4e0b\u65b0\u5efa\u4ed3\u5e93\u7528\u4e8e\u5b58\u653e\u56fe\u7247\u8d44\u6e90\uff0c\u5177\u4f53\u914d\u7f6e\u53c2\u8003',
+                o.a.createElement(
+                  i['Link'],
+                  {
+                    to: 'https://picgo.github.io/PicGo-Doc/zh/guide/config.html#github%E5%9B%BE%E5%BA%8A',
+                  },
+                  '\u5b98\u65b9\u624b\u628a\u624b\u6559\u5b66\u5982\u4f55\u914d\u7f6e github \u56fe\u5e8a',
+                ),
+              ),
+            ),
+            o.a.createElement(
+              'li',
+              null,
+              o.a.createElement(
+                'p',
+                null,
+                '\u505a\u597d\u4e0a\u8ff0\u64cd\u4f5c\u540e\uff0c\u6211\u4eec\u5c31\u53ef\u4ee5\u5728 vscode \u4e0a\u4f7f\u7528\u5feb\u6377\u952e',
+                o.a.createElement(
+                  'code',
+                  null,
+                  ' option + cmd + u\uff08mac\uff09',
+                ),
+                '\u63d2\u5165\u56fe\u7247\u4f1a\u81ea\u52a8\u751f\u6210\u56fe\u7247\u683c\u5f0f\u94fe\u63a5',
+              ),
+            ),
+          ),
+          o.a.createElement(
+            'h2',
+            {
+              id: '\u4e0d\u7528\u547d\u4ee4\u884c\u5220\u9664-github-\u4e0a\u56fe\u7247\u6216\u6587\u4ef6',
+            },
+            o.a.createElement(
+              i['AnchorLink'],
+              {
+                to: '#\u4e0d\u7528\u547d\u4ee4\u884c\u5220\u9664-github-\u4e0a\u56fe\u7247\u6216\u6587\u4ef6',
+                'aria-hidden': 'true',
+                tabIndex: -1,
+              },
+              o.a.createElement('span', { className: 'icon icon-link' }),
+            ),
+            '\u4e0d\u7528\u547d\u4ee4\u884c\uff0c\u5220\u9664 GitHub \u4e0a\u56fe\u7247\u6216\u6587\u4ef6',
+          ),
+          o.a.createElement(
+            'p',
+            null,
+            '\u901a\u5e38\u60c5\u51b5\u4e0b\uff0c\u6211\u4eec\u5220\u9664 GitHub \u7684\u56fe\u7247\u6216\u6587\u4ef6\u53ea\u80fd\u901a\u8fc7\u547d\u4ee4\u884c\u8fdb\u884c\uff0c\u5b9e\u9645\u4e0a github \u63d0\u4f9b\u4e86\u53ef\u89c6\u5316\u64cd\u4f5c\u8f85\u52a9\u6211\u4eec\u5220\u9664\uff0c\u6b65\u9aa4\u5982\u4e0b\uff1a',
+          ),
+          o.a.createElement(
+            'ol',
+            null,
+            o.a.createElement(
+              'li',
+              null,
+              '\u9f20\u6807\u70b9\u51fb\u8981\u5220\u9664\u7684\u56fe\u7247',
+            ),
+          ),
+          o.a.createElement(
+            'p',
+            null,
+            o.a.createElement('img', {
+              src: 'https://cdn.jsdelivr.net/gh/TorresXu123/PicGo@main/blogs/imgs/%E5%88%A0%E9%99%A4%E5%9B%BE%E5%BA%8A%E6%93%8D%E4%BD%9C1.png',
+              alt: '\u5220\u9664\u56fe\u5e8a\u64cd\u4f5c1',
+            }),
+          ),
+          o.a.createElement(
+            'ol',
+            { start: 2 },
+            o.a.createElement(
+              'li',
+              null,
+              '\u8fdb\u5165\u56fe\u7247\u9884\u89c8\uff0c\u70b9\u51fb\u53f3\u4e0a\u89d2\u5220\u9664\u6309\u94ae',
+            ),
+          ),
+          o.a.createElement(
+            'p',
+            null,
+            o.a.createElement('img', {
+              src: 'https://cdn.jsdelivr.net/gh/TorresXu123/PicGo@main/blogs/imgs/%E5%88%A0%E9%99%A4%E5%9B%BE%E5%BA%8A%E6%93%8D%E4%BD%9C2.png',
+              alt: '\u5220\u9664\u56fe\u5e8a\u64cd\u4f5c2',
+            }),
+          ),
+          o.a.createElement(
+            'ol',
+            { start: 3 },
+            o.a.createElement(
+              'li',
+              null,
+              '\u70b9\u51fb commit changes \u5220\u9664\u5e76\u63d0\u4ea4 commit \u5373\u53ef',
+            ),
+          ),
+          o.a.createElement(
+            'p',
+            null,
+            o.a.createElement('img', {
+              src: 'https://cdn.jsdelivr.net/gh/TorresXu123/PicGo@main/blogs/imgs/%E5%88%A0%E9%99%A4%E5%9B%BE%E5%BA%8A%E6%93%8D%E4%BD%9C3.png',
+              alt: '\u5220\u9664\u56fe\u5e8a\u64cd\u4f5c3',
+            }),
+          ),
+        ),
+      )
     );
   },
   '7fqy': function (e, t) {
@@ -13978,7 +14226,7 @@
   },
   RGYn: function (e) {
     e.exports = JSON.parse(
-      '{"menus":{"zh-CN":{"*":[{"path":"/","title":"Index","meta":{}}],"/guide":[{"path":"/guide","title":"CI/CD\u5b9e\u73b0\u6587\u6863\u81ea\u52a8\u5316\u90e8\u7f72","meta":{"order":1}},{"path":"/guide/components","title":"\u5982\u4f55\u642d\u5efa\u524d\u7aef\u7ec4\u4ef6\u5e93","meta":{"order":2}}],"/interview":[{"path":"/interview","title":"JS\u9762\u8bd5\u624b\u5199","meta":{"order":1}},{"path":"/interview/theory","title":"JS\u9762\u8bd5\u7406\u8bba","meta":{"order":2}}],"/visualization":[{"path":"/visualization","title":"\u56fe\u5f62\u57fa\u7840\u7bc7","meta":{"order":1}}]}},"locales":[{"name":"zh-CN","label":"\u4e2d\u6587"}],"navs":{"zh-CN":[{"path":"/guide","title":"\u6280\u672f\u6742\u9879","order":1},{"title":"\u524d\u7aef\u53ef\u89c6\u5316","order":2,"path":"/visualization"},{"title":"\u9762\u8bd5\u4e4b\u9053","order":3,"path":"/interview"}]},"title":"Blogs","mode":"site","repository":{"url":"","branch":"master"},"theme":{},"exportStatic":{}}',
+      '{"menus":{"zh-CN":{"*":[{"path":"/","title":"Index","meta":{}}],"/guide":[{"path":"/guide","title":"CI/CD\u5b9e\u73b0\u6587\u6863\u81ea\u52a8\u5316\u90e8\u7f72","meta":{"order":1}},{"path":"/guide/picgo","title":"\u6253\u9020\u514d\u8d39\u5feb\u901f\u7a33\u5b9a\u7684\u79c1\u4eba\u56fe\u5e8a","meta":{"order":2}},{"path":"/guide/components","title":"\u5982\u4f55\u642d\u5efa\u524d\u7aef\u7ec4\u4ef6\u5e93","meta":{"order":3}}],"/interview":[{"path":"/interview","title":"JS\u9762\u8bd5\u624b\u5199","meta":{"order":1}},{"path":"/interview/theory","title":"JS\u9762\u8bd5\u7406\u8bba","meta":{"order":2}}],"/visualization":[{"path":"/visualization","title":"\u56fe\u5f62\u57fa\u7840\u7bc7","meta":{"order":1}}]}},"locales":[{"name":"zh-CN","label":"\u4e2d\u6587"}],"navs":{"zh-CN":[{"path":"/guide","title":"\u6280\u672f\u6742\u9879","order":1},{"title":"\u524d\u7aef\u53ef\u89c6\u5316","order":2,"path":"/visualization"},{"title":"\u9762\u8bd5\u4e4b\u9053","order":3,"path":"/interview"}]},"title":"Blogs","mode":"site","repository":{"url":"","branch":"master"},"theme":{},"exportStatic":{}}',
     );
   },
   RK3t: function (e, t, n) {
