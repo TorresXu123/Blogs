@@ -113,3 +113,129 @@ function largeNumberAdd(a: string, b: string): string {
   return sum;
 }
 ```
+
+### 2、实现全局的 Toast 组件
+
+```js
+// 要求Toast支持string/object两种类型的调用，其基本的样式为垂直/水平居中于屏幕中央，图片文字上下混排。
+import Toast from './xx/toast';
+Toast('弹出');
+Toast({
+  img: 'https://p9-dy-ipv6.byteimg.com/avatar3.jpeg',
+  text: '弹出',
+});
+```
+
+解法如下：
+
+```js
+//思路：1.在全局body下挂载一个div，将写好的toast组件转换成html并插入该div 2.挂载完之后给toast组件实例设置属性 3.一定时间后销毁这个div节点
+
+import React from 'react';
+import ReactDom from 'react-dom';
+
+class ToastDom extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      img: '',
+      text: '',
+    };
+  }
+  setOpts(opts) {
+    this.setState({ text: opts.text, img: opts.img });
+  }
+  render() {
+    return (
+      <div>
+        {this.state.img !== '' ? (
+          <img src={this.state.img} alt={this.state.text}></img>
+        ) : null}
+        <div>{this.state.text}</div>
+      </div>
+    );
+  }
+}
+const Toast = (opts) => {
+  let duringTime = 1000; // 悬停秒数
+  let div = document.createElement('div');
+  document.body.appendChild(div);
+  // 将Toast和div挂载到render上
+  let toastInit = ReactDom.render(<ToastDom />, div);
+  const options = {};
+  if (typeof opts === 'string') {
+    options.text = opts;
+    options.img = '';
+  } else {
+    options = { ...opts };
+  }
+  toastInit.setOpts(options);
+  setTimeout(() => {
+    document.body.removeChild(div);
+  }, duringTime);
+};
+
+export default Toast;
+```
+
+## 三、LeeCode 算法专题
+
+### 1、有效的括号
+
+给定一个只包括 '('，')'，'{'，'}'，'['，']'  的字符串 s ，判断字符串是否有效。
+
+有效字符串需满足：左括号必须用相同类型的右括号闭合。左括号必须以正确的顺序闭合。
+
+**测试用例**
+
+    输入：s = "()"
+    输出：true
+
+    输入：s = "()[]{}"
+    输出：true
+
+    输入：s = "(]"
+    输出：false
+
+    输入：s = "([)]"
+    输出：false
+
+    输入：s = "{[]}"
+    输出：true
+
+**题解思路**
+
+1. 左括号必须用相同类型的右括号闭合。
+2. 左括号必须以正确的顺序闭合。
+3. 字符串 s 的长度一定是偶数，不可能是奇数(一对对匹配)。
+4. 右括号前面一定跟着左括号，才符合匹配条件，具备对称性。
+5. 右括号前面如果不是左括号，一定不是有效的括号。
+6. 可以利用出入栈(后入先出)来形成对称性，将所有左括号以此遍历入栈，当匹配到不是左括号，就 pop 最近的一次入栈和当前的右括号对比（一定要成对，否则不满足对称性）
+7. 最后栈里一定要是空的，所有的左括号要找到对应的右括号，否则也不满足
+8. 综上，需要 for 循环+两个判断条件
+
+```js
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+var isValid = function (s) {
+  const lightType = {
+    '(': ')',
+    '[': ']',
+    '{': '}',
+  };
+  const stack = [];
+  for (let index = 0; index < s.length; index++) {
+    const element = s[index];
+    if (lightType[element]) {
+      stack.push(element);
+    } else {
+      if (element !== lightType[stack.pop()]) {
+        return false;
+      }
+    }
+  }
+  return !stack.length;
+};
+```
